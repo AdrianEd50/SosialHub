@@ -1,0 +1,313 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Light Mode Body Styles */
+  body.light {
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  /* Dark Mode Body Styles */
+  body.dark {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  /* App container */
+  .app {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Dark Mode App Container */
+  body.dark .app {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Header */
+  h1 {
+    text-align: center;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  
+  /* Dark Mode Header */
+  body.dark h1 {
+    color: #81c784;
+  }
+  
+  /* Post Creator */
+  .post-creator {
+    margin-bottom: 20px;
+  }
+  
+  .post-creator input,
+  .post-creator textarea {
+    width: calc(100% - 20px);
+    margin: 5px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  /* Dark Mode Post Creator Inputs */
+  body.dark .post-creator input,
+  body.dark .post-creator textarea {
+    background-color: #333;
+    color: #e0e0e0;
+    border-color: #555;
+  }
+  
+  /* Post Creator Button */
+  .post-creator button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Dark Mode Post Creator Button */
+  body.dark .post-creator button {
+    background-color: #81c784;
+  }
+  
+  /* Post Creator Button Hover */
+  .post-creator button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Dark Mode Post Creator Button Hover */
+  body.dark .post-creator button:hover {
+    background-color: #66bb6a;
+  }
+  
+  /* Personalized Feed */
+  .personalized-feed {
+    margin-bottom: 20px;
+  }
+  
+  .personalized-feed .post {
+    margin-bottom: 15px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  /* Dark Mode Personalized Feed Posts */
+  body.dark .personalized-feed .post {
+    background-color: #333;
+    border-color: #555;
+  }
+  
+  /* Post Title */
+  .personalized-feed .post h2 {
+    margin: 0 0 10px;
+    color: #333;
+  }
+  
+  /* Dark Mode Post Title */
+  body.dark .personalized-feed .post h2 {
+    color: #e0e0e0;
+  }
+  
+  /* Post Content */
+  .personalized-feed .post p {
+    margin: 0;
+    color: #666;
+  }
+  
+  /* Dark Mode Post Content */
+  body.dark .personalized-feed .post p {
+    color: #ccc;
+  }
+  
+  /* Notifications */
+  .notifications {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Dark Mode Notifications */
+  body.dark .notifications {
+    background-color: #333;
+    border-color: #555;
+    color: #e0e0e0;
+  }
+  
+  /* Notifications Header */
+  .notifications h3 {
+    margin-top: 0;
+    color: #4CAF50;
+  }
+  
+  /* Dark Mode Notifications Header */
+  body.dark .notifications h3 {
+    color: #81c784;
+  }
+  
+  /* Notifications List */
+  .notifications ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Notifications List Item */
+  .notifications ul li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    font-size: 0.9rem;
+  }
+  
+  /* Dark Mode Notifications List Item */
+  body.dark .notifications ul li {
+    background-color: #444;
+  }
+  
+  /* Interaction Section */
+  .interaction-section {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Like Button */
+  .like-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;  /* Reduce padding */
+    font-size: 0.9rem;  /* Decrease font size */
+    border-radius: 3px; /* Smaller border radius */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .like-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Comment Section */
+  .comment-section {
+    margin-top: 20px;
+  }
+  
+  .comment-section textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .comment-section button {
+    margin-top: 10px;
+  }
+  
+  /* Share Button */
+  .share-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;  /* Reduce padding */
+    font-size: 0.9rem;  /* Decrease font size */
+    border-radius: 3px; /* Smaller border radius */
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .share-button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Theme Switcher Button */
+  .theme-switcher button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  /* Dark Mode Theme Switcher Button */
+  body.dark .theme-switcher button {
+    background-color: #81c784;
+  }
+  
+  /* Theme Switcher Button Hover */
+  .theme-switcher button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Dark Mode Theme Switcher Button Hover */
+  body.dark .theme-switcher button:hover {
+    background-color: #66bb6a;
+  }
+  
+  /* Following List */
+  .following-list {
+    margin-top: 20px;
+  }
+  
+  .following-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .following-list ul li {
+    padding: 10px;
+    margin-bottom: 5px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Dark Mode Following List */
+  body.dark .following-list ul li {
+    background-color: #444;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    .app {
+      padding: 10px;
+    }
+  
+    .post-creator input,
+    .post-creator textarea {
+      font-size: 0.9rem;
+    }
+  
+    .post-creator button {
+      font-size: 0.9rem;
+    }
+  }
