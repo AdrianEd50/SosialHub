@@ -1,0 +1,50 @@
+body, html {
+height: 100%;
+margin: 0;
+font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: forestgreen;
+    color: black;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.header ul {
+    display: flex; /* Bruk Flexbox for horisontal layout */
+    list-style-type: none; /* Fjern standard punktmerking */
+    padding: 0;
+    margin: 0;
+  }
+  
+  .header li {
+    margin-right: 20px; /* Legg til mellomrom mellom elementene */
+  }
+  
+  .header li:last-child {
+    margin-right: 0; /* Fjern ekstra mellomrom etter siste element */
+  }
+
+button {
+    background-color: forestgreen;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 50px 50px 50px 50px;
+  }
+
+  button:hover {
+    background-color: rgba(34, 139, 34, 0.786);
+  }
+  
+  footer {
+    margin-top: 440px;
+    background-color: forestgreen; 
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+  }
