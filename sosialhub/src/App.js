@@ -24,6 +24,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Profile from './Pages/Profile';
 import Posts from './Pages/Posts';
+import Login from './Pages/Login';
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/profile" element={<Profile />} />
           <Route path="/posts" element={<Posts />} />
+          <Route path="/login" element={<Login />} />
         </Routes>
       </div>
       <Footer />
@@ -44,3 +46,5 @@ function App() {
 export default App;
 
 
+
+ 

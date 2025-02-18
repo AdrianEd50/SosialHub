@@ -1,15 +1,19 @@
+
 body, html {
   margin: 0;
   padding: 0;
   min-height: 100vh; 
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424; 
 }
 
 header {
-    background-color: forestgreen;
-    color: black;
-    padding: 10px;
+    background-color: #213547;
+    color: white;
+    padding: 5px;
     text-align: center;
 }
 
@@ -25,7 +29,7 @@ header {
 
 .header ul li a {
   text-decoration: none;
-  color: black;
+  color: white;
   font-weight: bold;
 }
 
@@ -33,19 +37,26 @@ header {
   text-decoration: underline;
 }
 
+h2, p{
+  margin: 10px;
+}
+
 
 button {
-    background-color: forestgreen;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    margin: 50px 50px 50px 50px;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  margin: 20px;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
   }
 
   button:hover {
-    background-color: rgba(34, 139, 34, 0.786);
+    border-color: #646cff;
   }
 
   
@@ -57,9 +68,12 @@ button {
   
   .footer {
     margin-top: auto; 
-    background-color: forestgreen; 
-    color: black;
+    background-color: #213547;
+    color: white;
     text-align: center;
     padding: 10px 0;
     width: 100%; 
   }
+
+
+  
