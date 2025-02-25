@@ -25,6 +25,10 @@ import Home from './Pages/Home';
 import Profile from './Pages/Profile';
 import Posts from './Pages/Posts';
 import Login from './Pages/Login';
+import Signup from './Pages/Signup';
+import Notifications from './Pages/Notifications';
+import Messages from './Pages/Messages';
+
 
 function App() {
   return (
@@ -36,6 +40,9 @@ function App() {
           <Route path="/profile" element={<Profile />} />
           <Route path="/posts" element={<Posts />} />
           <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/notifications" element={<Notifications />} />
+          <Route path="/messages" element={<Messages />} />
         </Routes>
       </div>
       <Footer />

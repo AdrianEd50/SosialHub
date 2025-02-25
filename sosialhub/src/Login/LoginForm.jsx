@@ -15,10 +15,10 @@ const LoginForm = () => {
   };
 
   return (
-    <div className="p-4 max-w-sm mx-auto border rounded">
-      <h2 className="text-xl font-bold mb-4">Logg inn</h2>
+    <div>
+      <h2>Logg inn</h2>
       <form onSubmit={handleLogin}>
-        <div className="mb-4">
+        <div className="epost">
           <label className="block mb-1">E-post</label>
           <input
             type="email"
@@ -28,7 +28,7 @@ const LoginForm = () => {
             placeholder="Skriv inn e-posten din"
           />
         </div>
-        <div className="mb-4">
+        <div className="passord">
           <label className="block mb-1">Passord</label>
           <input
             type="password"

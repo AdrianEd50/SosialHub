@@ -1,16 +1,16 @@
 import React from "react";
-import Button from "../components/Button";
+import LoginForm from "../Login/LoginForm";
+import { useNavigate } from "react-router-dom";
+
 
 function Home() {
-  const handleClick = () => {
-    alert("Welcome to Sosialhub!");
-  };
-
+  const navigate = useNavigate();
   return (
-    <div>
-      <h2>Welcome to Home</h2>
-      <p>Explore Sosialhub, connect with others, and share your thoughts!</p>
-      <Button label="Get Started" type="button" onClick={handleClick} />
+    <div className="LoginForm">
+      <LoginForm />
+      <button className="loginBtn" onClick={() => navigate("/signup")}>
+        Not signed up? Click here to signup
+      </button>
     </div>
   );
 }

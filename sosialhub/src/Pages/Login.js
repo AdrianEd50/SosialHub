@@ -1,12 +1,10 @@
 import React from "react";
-//import AuthComponent from "../components/AuthComponent";
-
+import LoginForm from "../Login/LoginForm";
 
 function Login() {
   return (
     <div>
-      <h2>Login</h2>
-      <p>Login Here</p>
+      <LoginForm />
       
     </div>
   );

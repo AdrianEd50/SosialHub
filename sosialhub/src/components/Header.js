@@ -18,6 +18,12 @@ function Header() {
         <li>
         <NavLink to="/login" className={({ isActive }) => (isActive ? "active" : "")}>Login</NavLink>
         </li>
+        <li>
+        <NavLink to="/notifications" className={({ isActive }) => (isActive ? "active" : "")}>Notifications</NavLink>
+        </li>
+        <li>
+        <NavLink to="/messages" className={({ isActive }) => (isActive ? "active" : "")}>Messages</NavLink>
+        </li>
       </ul>
     </header>
   );
